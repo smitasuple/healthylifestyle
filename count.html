@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.container {
+  padding: 16px;
+}
+.modal1-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+</style>
+</head>
+<body>
+<a href="C:\Users\DELL\Desktop\calorie_counter\form1\form.html">Back</a>
+<div class="modal1-content">
+	<form action="/action_page.php">
+		<div class="container">
+	
+		  <label for="cars">Choose a Food:</label>
+				  <select name="Food" id="Food">
+					<optgroup label="Vegetable">
+					  <option value="Potato">Potato</option>
+					  <option value="Carrot">Carrot</option>
+					</optgroup>
+					<optgroup label="Fruit">
+					  <option value="Mango">Mango</option>
+					  <option value="Banana">Banana</option>
+					</optgroup>
+					<optgroup label="Dry Fruits">
+					  <option value="Dates">Dates</option>
+					  <option value="Almond">Almond</option>
+					</optgroup>
+					<optgroup label="Pulses">
+					  <option value="Tur">Tur</option>
+					  <option value="Rajama">Rajama</option>
+					</optgroup>
+				  </select>
+				  <br><br>
+				  
+				  
+				  <label for="cars">Serving:</label>
+				  <select name="Quantity" id="quant">
+					<optgroup label="Cup">
+					  <option value="Full">Full cup</option>
+					  <option value="Half">1/2 cup</option>
+					</optgroup>
+					<optgroup label="Spoon">
+					  <option value="Full">Full spoon</option>
+					  <option value="Half">1/2 spoon</option>
+				  </select>
+				  <br><br>
+			
+				  <input type="submit" value="Submit">
+				</form>
+		</div>
+</div>
